@@ -55,8 +55,33 @@ def fibonacci(n):
 fibonacci(10)
 
 #9
+
+list_original = ['a', 'b', 'c', 'd', 'e', 'f']
+
+for i, element in enumerate(list_original):
+  if i % 2 == 0:
+    print(element)
 #10
+
+count = 0
+validate = False
+for i in range(10):
+  if validate == True:
+    count = count - 1
+    print("*" * count)
+  else:
+    count = count + 1
+    print("*" * count)
+    if(count >= 5):
+      validate = True
+  
 #11
+
+for i in range(5):
+  for j in range(5-i):
+    print(5-j, end='')
+  print()
+
 #12
 
 def prime_numbers(n):

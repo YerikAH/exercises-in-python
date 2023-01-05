@@ -1,7 +1,7 @@
 
 employees = []
 
-for i in range(10):
+for i in range(1):
   name = input("Ingrese el nombre del empleado: ")
   last_name = input("Ingrese el apellido del empleado: ")
   base_salary = input("Ingrese el sueldo base del empleado: ")
@@ -22,9 +22,9 @@ for i in range(10):
 
 
 for employee in employees:
-  base_salary = employee["base_salary"]
-  afap = employee["afap"]
-  children = employee["children"]
+  base_salary = int(employee["base_salary"])
+  afap = int(employee["afap"])
+  children = int(employee["children"])
 
   # Calculamos la base imponible
   taxable_base = base_salary - (base_salary * afap) - (children * 10000)
@@ -38,4 +38,5 @@ for employee in employees:
   employee["fonasa_payment"] = fonasa_payment
   employee["afap_payment"] = afap_payment
 
+print
 # Podemos calcular el promedio de pago a los empleados de la siguiente manera:# stop
